@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benefits | IoT in Agriculture</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ===== Shared Variables ===== */
+        :root {
+            --primary: #2e7d32;
+            --primary-dark: #1b5e20;
+            --accent: #ffd54f;
+            --text-dark: #1a1a1a;
+            --text-light: #ffffff;
+            --bg-soft: #f0f4f1;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            background-color: #f8faf9;
+            color: var(--text-dark);
+        }
+
+        /* ===== Header & Navigation ===== */
+        header {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        header h1 {
+            color: white;
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            padding: 5px 12px;
+            border-radius: 5px;
+            transition: var(--transition);
+        }
+
+        nav a:hover { background: white; color: var(--primary-dark); }
+        
+        /* Highlight current page */
+        .active-link { 
+            background: var(--accent) !important; 
+            color: var(--primary-dark) !important; 
+            font-weight: 700; 
+        }
+
+        /* ===== Benefits Content ===== */
+        .benefits-hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('Web Project/Calculating Soil Requirements for Different Container Sizes.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .benefits-hero h1 { font-size: 3rem; margin-bottom: 15px; }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .benefit-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: var(--transition);
+            border: 1px solid #eee;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary);
+            box-shadow: 0 20px 40px rgba(46, 125, 50, 0.1);
+        }
+
+        .icon-circle {
+            width: 80px;
+            height: 80px;
+            background: var(--bg-soft);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 25px;
+            font-size: 2.5rem;
+        }
+
+        .benefit-card h3 {
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+        }
+
+        .benefit-card p {
+            color: #555;
+            font-size: 1rem;
+        }
+
+        /* ===== Bottom Banner ===== */
+        .stats-banner {
+            background: var(--primary-dark);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            margin-top: 40px;
+            border-radius: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .benefits-hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <h1>IoT in Agriculture</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="how-it-works.html">How It Works</a></li>
+                    <li><a href="benefits.html" class="active-link">Benefits</a></li>
+                    <li><a href="case-studies.html">Case Studies</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="benefits-hero">
+        <h1>Why Choose IoT?</h1>
+        <p>The advantages of integrating smart technology into Ghanaian farms.</p>
+    </section>
+
+    <main class="container">
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="icon-circle">💧</div>
+                <h3>Water Conservation</h3>
+                <p>Smart irrigation systems reduce water waste by up to 40% by only watering when sensors detect low soil moisture.</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="icon-circle">📈</div>
+                <h3>Increased Yield</h3>
+                <p>Data-driven decisions allow farmers to optimize planting times and fertilizer use, leading to 20-30% higher crop yields.</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="icon-circle">🛡️</div>
+                <h3>Pest & Disease Control</h3>
+                <p>Early warning systems detect humidity levels that lead to fungal growth, allowing for targeted treatment before crops are lost.</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="icon-circle">💰</div>
+                <h3>Reduced Costs</h3>
+                <p>Automation reduces the need for manual monitoring and prevents over-application of expensive fertilizers and pesticides.</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="icon-circle">📱</div>
+                <h3>Remote Monitoring</h3>
+                <p>Monitor your farm from anywhere in the world using your smartphone. Get instant alerts if something goes wrong.</p>
+            </div>
+
+            <div class="benefit-card">
+                <div class="icon-circle">🌍</div>
+                <h3>Sustainability</h3>
+                <p>Promote long-term soil health by preventing over-farming and chemical runoff into local water sources.</p>
+            </div>
+        </div>
+
+        <section class="stats-banner">
+            <h2>The Impact in Numbers</h2>
+            <p style="margin-top: 10px; opacity: 0.8;">Smart farms in Africa are seeing a significant return on investment within the first two seasons.</p>
+        </section>
+    </main>
+
+</body>
+</html>

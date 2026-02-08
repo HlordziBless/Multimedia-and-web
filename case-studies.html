@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies | IoT Agriculture</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-green: #4CAF50;
+            --dark-green: #2E7D32;
+            --bg-light: #F9FBF9;
+            --white: #ffffff;
+            --text-dark: #2c3e50;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* ===== Consistent Navigation (Same as How It Works) ===== */
+        .top-nav {
+            background: linear-gradient(to right, #388E3C, #81C784);
+            padding: 15px 0;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-inner {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        nav ul { list-style: none; display: flex; gap: 20px; }
+        nav a { color: white; text-decoration: none; font-size: 0.9rem; padding: 8px 15px; border-radius: 5px; transition: 0.3s; }
+        .active-btn { background: white; color: var(--dark-green); font-weight: 600; }
+
+        /* ===== Hero Section ===== */
+        .case-hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: var(--white);
+            border-bottom: 1px solid #eee;
+        }
+
+        .case-hero h1 { font-size: 2.5rem; color: var(--dark-green); margin-bottom: 10px; }
+
+        /* ===== Case Study Cards ===== */
+        .container { max-width: 1000px; margin: 50px auto; padding: 0 20px; }
+
+        .case-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            display: flex;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+        }
+
+        .case-image { flex: 1; min-height: 300px; }
+        .case-image img { width: 100%; height: 100%; object-fit: cover; }
+
+        .case-content { flex: 1.2; padding: 40px; }
+
+        .tag {
+            display: inline-block;
+            background: #E8F5E9;
+            color: var(--dark-green);
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .case-content h2 { margin-bottom: 15px; color: #333; }
+
+        .results-box {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            display: flex;
+            gap: 20px;
+        }
+
+        .stat { flex: 1; }
+        .stat-val { display: block; font-size: 1.5rem; font-weight: 700; color: var(--primary-green); }
+        .stat-label { font-size: 0.8rem; color: #777; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .case-card { flex-direction: column; }
+            .case-image { min-height: 200px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-nav">
+        <div class="nav-inner">
+            <div style="font-weight: 700;">IoT in Agriculture</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="how-it-works.html">How it works</a></li>
+                    <li><a href="benefits.html">Benefits</a></li>
+                    <li><a class="active-btn" href="case-studies.html">Case Studies</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="case-hero">
+        <div class="tag">SUCCESS STORIES</div>
+        <h1>Impact Across the Regions</h1>
+        <p>See how IoT is transforming farms from Greater Accra to the Northern Region.</p>
+    </section>
+
+    <main class="container">
+        
+        <article class="case-card">
+            <div class="case-image">
+                <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=600&q=80" alt="Maize Farm">
+            </div>
+            <div class="case-content">
+                <div class="tag">NORTHERN REGION</div>
+                <h2>The Smart Maize Initiative</h2>
+                <p>Smallholder farmers in Tamale faced unpredictable rainfall. By installing soil moisture sensors, they reduced water usage while maintaining crop health.</p>
+                
+                <div class="results-box">
+                    <div class="stat">
+                        <span class="stat-val">35%</span>
+                        <span class="stat-label">Yield Increase</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-val">40%</span>
+                        <span class="stat-label">Water Saved</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="case-card">
+            <div class="case-image">
+                <img src="Web Project/Cloud Pesticide Platforms for Greenhouses_ Guide.jpg" alt="Greenhouse">
+            </div>
+            <div class="case-content">
+                <div class="tag">GREATER ACCRA</div>
+                <h2>Urban Greenhouse Automation</h2>
+                <p>Using IoT-enabled humidity and temperature control, this vegetable farm in Accra achieved year-round production of premium tomatoes.</p>
+                
+                <div class="results-box">
+                    <div class="stat">
+                        <span class="stat-val">12 mo.</span>
+                        <span class="stat-label">Production</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-val">25%</span>
+                        <span class="stat-label">Less Waste</span>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+</body>
+</html>
